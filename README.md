@@ -1,16 +1,20 @@
 <div align="center">
 
-# 🇵🇰 Awaaz Pakistan
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00BFFF,50:0ea5e9,100:14532d&height=220&section=header&text=Awaaz%20Pakistan&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Your%20Voice%2C%20Unrestricted&descAlignY=58&descSize=18" width="100%"/>
 
-### 🗣️ Your Voice, Unrestricted
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1200&color=00BFFF&center=true&vCenter=true&width=700&lines=Sign+the+Petition;Generate+an+AI+Powered+Appeal;Speak+It+or+Type+It;English+or+Urdu%2C+Your+Choice" alt="Typing animation" />
 
-A zero cost, dual language advocacy platform helping Pakistani professionals regain access to restricted LinkedIn accounts.
+<br/>
 
 ![Live Demo](https://img.shields.io/badge/Live_Demo-View-00C7B7?style=for-the-badge&logo=vercel)
 ![Next.js](https://img.shields.io/badge/Next.js-16.3.0-000000?style=for-the-badge&logo=next.js)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge)
 ![Made in Pakistan](https://img.shields.io/badge/Made_in-Pakistan-00BFFF?style=for-the-badge)
+
+<img src="https://img.shields.io/github/stars/AbdulAzeemHashmi/Awaaz-Pakistan?style=social" alt="stars"/>
+<img src="https://img.shields.io/github/forks/AbdulAzeemHashmi/Awaaz-Pakistan?style=social" alt="forks"/>
+<img src="https://img.shields.io/github/last-commit/AbdulAzeemHashmi/Awaaz-Pakistan?color=00BFFF" alt="last commit"/>
 
 [🔗 Live Demo](https://awaaz-pakistan.vercel.app/en) &nbsp;•&nbsp; [🐙 GitHub Repository](https://github.com/AbdulAzeemHashmi/Awaaz-Pakistan) &nbsp;•&nbsp; [⭐ Star This Repo](https://github.com/AbdulAzeemHashmi/Awaaz-Pakistan/stargazers)
 
@@ -20,23 +24,29 @@ A zero cost, dual language advocacy platform helping Pakistani professionals reg
 
 **Awaaz Pakistan** is a community driven advocacy platform that helps Pakistani professionals regain access to their restricted LinkedIn accounts. It combines a collective petition, AI generated bilingual appeal letters, and voice input support, all running on completely free infrastructure with zero credit card requirements.
 
+<div align="center">
+<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="360" alt="advocacy platform animation"/>
+</div>
+
 ---
 
 ## 📋 Table of Contents
 
 1. [🚫 The Problem](#-the-problem)
 2. [💡 The Solution](#-the-solution)
-3. [🚀 Live Demo](#-live-demo)
-4. [🎯 Features](#-features)
-5. [🛠️ Tech Stack](#️-tech-stack)
-6. [📁 Project Structure](#-project-structure)
-7. [⚙️ Setup and Installation](#️-setup-and-installation)
-8. [🔑 Environment Variables](#-environment-variables)
-9. [🗄️ Database Schema](#️-database-schema)
-10. [☁️ Deployment](#️-deployment)
-11. [🤝 How to Contribute](#-how-to-contribute)
-12. [📄 License](#-license)
-13. [🙏 Acknowledgments](#-acknowledgments)
+3. [🔄 How It Works](#-how-it-works)
+4. [🚀 Live Demo](#-live-demo)
+5. [🎯 Features](#-features)
+6. [🖼️ Screenshots](#️-screenshots)
+7. [🛠️ Tech Stack](#️-tech-stack)
+8. [📁 Project Structure](#-project-structure)
+9. [⚙️ Setup and Installation](#️-setup-and-installation)
+10. [🔑 Environment Variables](#-environment-variables)
+11. [🗄️ Database Schema](#️-database-schema)
+12. [☁️ Deployment](#️-deployment)
+13. [🤝 How to Contribute](#-how-to-contribute)
+14. [📄 License](#-license)
+15. [🙏 Acknowledgments](#-acknowledgments)
 
 ---
 
@@ -68,6 +78,27 @@ The result:
 ✅ **Zero cost infrastructure**: built entirely on free tiers, no credit card required to run or contribute
 
 📌 The goal is simple: turn thousands of individual, ignored complaints into one loud, well documented, unified voice.
+
+---
+
+## 🔄 How It Works
+
+<div align="center">
+
+```mermaid
+flowchart LR
+    A[🌐 Choose English or Urdu] --> B[✍️ Sign the Petition]
+    B --> C{🎤 Type or Speak?}
+    C -->|⌨️ Type| D[📝 Describe Your Situation]
+    C -->|🎤 Speak| E[🎤 Cloudflare Whisper Transcribes]
+    E --> D
+    D --> F[🤖 Gemini + LangChain Generate Appeal]
+    F --> G[📄 Review Bilingual Appeal Letter]
+    G --> H[📤 Submit to LinkedIn Support]
+    G --> I[📢 Share Petition to Grow Reach]
+```
+
+</div>
 
 ---
 
@@ -104,6 +135,24 @@ The result:
 
 ---
 
+## 🖼️ Screenshots
+
+<div align="center">
+
+| English Interface | Urdu Interface (RTL) |
+|:---:|:---:|
+| 🖼️ *screenshot placeholder* | 🖼️ *screenshot placeholder* |
+
+| Petition Page | AI Appeal Generator |
+|:---:|:---:|
+| 🖼️ *screenshot placeholder* | 🖼️ *screenshot placeholder* |
+
+> 📸 Replace these placeholders with real screenshots showing the English layout, the mirrored Urdu RTL layout, the petition counter, and the AI appeal generator in action.
+
+</div>
+
+---
+
 ## 🛠️ Tech Stack
 
 <div align="center">
@@ -118,6 +167,20 @@ The result:
 | 🈯 **LibreTranslate** | Open source translation support | Free and fully open source |
 | 🌐 **next-intl** | Internationalization with Urdu RTL support | Open source library |
 | 💅 **Tailwind CSS v4** | Styling and design system | Open source |
+
+<br/>
+
+![Next.js](https://skillicons.dev/icons?i=nextjs)
+&nbsp;
+![TypeScript](https://skillicons.dev/icons?i=typescript)
+&nbsp;
+![Tailwind](https://skillicons.dev/icons?i=tailwind)
+&nbsp;
+![Supabase](https://skillicons.dev/icons?i=supabase)
+&nbsp;
+![Cloudflare](https://skillicons.dev/icons?i=cloudflare)
+&nbsp;
+![Vercel](https://skillicons.dev/icons?i=vercel)
 
 </div>
 
@@ -177,20 +240,30 @@ Awaaz-Pakistan/
 - 🔑 A free Google Gemini API key
 - ☁️ A free Cloudflare account with Workers AI enabled
 
-### 1️⃣ Clone the Repository
+<details open>
+<summary><b>1️⃣ Clone the Repository</b></summary>
+<br/>
 
 ```bash
 git clone https://github.com/AbdulAzeemHashmi/Awaaz-Pakistan.git
 cd Awaaz-Pakistan
 ```
 
-### 2️⃣ Install Dependencies
+</details>
+
+<details open>
+<summary><b>2️⃣ Install Dependencies</b></summary>
+<br/>
 
 ```bash
 npm install
 ```
 
-### 3️⃣ Configure Environment Variables
+</details>
+
+<details open>
+<summary><b>3️⃣ Configure Environment Variables</b></summary>
+<br/>
 
 ```bash
 cp .env.example .env.local
@@ -198,11 +271,19 @@ cp .env.example .env.local
 
 Fill in the values described in the [Environment Variables](#-environment-variables) table below.
 
-### 4️⃣ Set Up the Database
+</details>
+
+<details open>
+<summary><b>4️⃣ Set Up the Database</b></summary>
+<br/>
 
 Run the SQL in [Database Schema](#-database-schema) inside your Supabase SQL editor.
 
-### 5️⃣ Run the Development Server
+</details>
+
+<details open>
+<summary><b>5️⃣ Run the Development Server</b></summary>
+<br/>
 
 ```bash
 npm run dev
@@ -210,9 +291,13 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser. 🎉
 
+</details>
+
 ---
 
 ## 🔑 Environment Variables
+
+<div align="center">
 
 | Variable | Description | Where to Get |
 |----------|-------------|--------------|
@@ -220,6 +305,8 @@ Open [http://localhost:3000](http://localhost:3000) in your browser. 🎉
 | `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL | Supabase Dashboard, Settings, API |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase anon public key | Supabase Dashboard, Settings, API |
 | `NEXT_PUBLIC_CLOUDFLARE_WORKER_URL` | Cloudflare Worker URL | Cloudflare Workers Dashboard |
+
+</div>
 
 ```env
 GEMINI_API_KEY=your_gemini_api_key_here
@@ -235,6 +322,10 @@ NEXT_PUBLIC_CLOUDFLARE_WORKER_URL=https://your-worker.your-subdomain.workers.dev
 ## 🗄️ Database Schema
 
 Awaaz Pakistan uses two tables in Supabase: one for individual petition signatures, and one for aggregate stats.
+
+<details open>
+<summary><b>📋 Run this SQL in your Supabase SQL editor</b></summary>
+<br/>
 
 ```sql
 -- Stores every individual petition signature
@@ -268,6 +359,8 @@ create policy "Allow public read" on petition_stats
   for select using (true);
 ```
 
+</details>
+
 📊 **Table purposes:**
 
 - `signatures` stores each individual petition entry, including the signer's name, contact details, optional message, and preferred language
@@ -277,7 +370,9 @@ create policy "Allow public read" on petition_stats
 
 ## ☁️ Deployment
 
-### 🚀 Deploying the Next.js App to Vercel
+<details open>
+<summary><b>🚀 Deploying the Next.js App to Vercel</b></summary>
+<br/>
 
 1. 📤 Push your fork to GitHub
 2. 📥 Import the repository at [vercel.com/new](https://vercel.com/new), connected directly to your GitHub account
@@ -285,7 +380,11 @@ create policy "Allow public read" on petition_stats
 4. ⚙️ Vercel automatically detects Next.js and configures the build
 5. 🚀 Click **Deploy**
 
-### 🎤 Deploying the Cloudflare Whisper Worker
+</details>
+
+<details open>
+<summary><b>🎤 Deploying the Cloudflare Whisper Worker</b></summary>
+<br/>
 
 ```bash
 cd workers/whisper-worker
@@ -296,11 +395,17 @@ wrangler deploy
 
 Copy the deployed Worker URL into `NEXT_PUBLIC_CLOUDFLARE_WORKER_URL` in your environment variables.
 
-### 🗄️ Setting Up Supabase
+</details>
+
+<details open>
+<summary><b>🗄️ Setting Up Supabase</b></summary>
+<br/>
 
 1. 🆕 Create a new free project at [supabase.com](https://supabase.com)
 2. 📋 Open the SQL editor and run the schema from the [Database Schema](#-database-schema) section
 3. 🔑 Copy your project URL and anon key into your environment variables
+
+</details>
 
 ---
 
@@ -357,5 +462,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE)
 </a>
 
 🚀 **Every voice added makes this louder.**
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:14532d,50:0ea5e9,100:00BFFF&height=120&section=footer" width="100%"/>
 
 </div>
