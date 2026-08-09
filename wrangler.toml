@@ -1,0 +1,6 @@
+name = "awaaz-transcribe"
+main = "worker/index.js"
+compatibility_date = "2026-08-08"
+
+[[ai]]
+binding = "AI"

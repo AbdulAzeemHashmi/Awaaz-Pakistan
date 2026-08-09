@@ -1,0 +1,30 @@
+{
+    "title": "Unrestrict Pakistani Accounts",
+    "subtitle": "Help Pakistani professionals regain access to their LinkedIn accounts",
+    "sign_petition": "Sign the Petition",
+    "voice_input": "Click to Speak",
+    "voice_input_stop": "Stop Recording",
+    "name": "Full Name",
+    "email": "Email Address",
+    "linkedin_url": "LinkedIn Profile URL",
+    "document_type": "Which document do you hold?",
+    "document_options": {
+        "cnic": "CNIC (Regular)",
+        "smart_cnic": "Smart CNIC",
+        "passport": "Passport (Regular)",
+        "epassport": "e-Passport (NFC)"
+    },
+    "message": "Your Message",
+    "message_placeholder": "Describe your situation. Why should your account be restored?",
+    "submit": "Submit",
+    "generating": "Generating your appeal...",
+    "appeal": "Generate AI Appeal",
+    "appeal_generated": "Your Appeal is Ready",
+    "copy": "Copy to Clipboard",
+    "copied": "Copied!",
+    "submit_to_linkedin": "Submit to LinkedIn",
+    "social_share": "Share on Social Media",
+    "signatures_count": "People have signed",
+    "signature_goal": "Goal: 10,000 signatures",
+    "footer": "Built with ❤️ for Pakistani professionals"
+}
