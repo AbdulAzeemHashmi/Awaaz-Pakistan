@@ -8,12 +8,6 @@ export default function VoiceInput({ onTranscript, disabled }) {
     const locale = useLocale();
 
     const startRecording = async () => {
-        if (!process.env.NEXT_PUBLIC_CLOUDFLARE_WORKER_URL) {
-            console.error("Cloudflare Worker URL is not configured");
-            alert("Voice input is currently unavailable.");
-            return;
-        }
-
         try {
             const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
             const mediaRecorder = new MediaRecorder(stream);
@@ -27,7 +21,9 @@ export default function VoiceInput({ onTranscript, disabled }) {
                 formData.append('language', locale === 'ur' ? 'ur' : 'en');
 
                 try {
-                    const response = await fetch(process.env.NEXT_PUBLIC_CLOUDFLARE_WORKER_URL, {
+                    // Call our server-side proxy instead of the Worker directly.
+                    // This avoids CORS — the server forwards the audio to Cloudflare.
+                    const response = await fetch('/api/transcribe', {
                         method: 'POST',
                         body: formData
                     });
