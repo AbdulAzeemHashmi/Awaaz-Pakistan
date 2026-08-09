@@ -97,7 +97,7 @@
 |:--------|:------------|
 | ✍️ **Collective Petition** | Sign alongside thousands to demand LinkedIn accept CNICs and NADRA verified documents |
 | 🤖 **AI Appeal Letters** | Powered by Gemini 2.0 Flash and LangChain, generated instantly in English or Urdu |
-| 🎤 **Voice Input** | Speak your situation instead of typing, powered by Cloudflare Workers AI Whisper Large v3 Turbo |
+| 🎤 **Voice Input** | Speak your situation instead of typing, powered by browser-native Web Speech API |
 | 🌐 **Full Bilingual UI** | Complete Urdu RTL rendering, not a bolted on translation |
 | 💰 **Zero Cost Infrastructure** | Built entirely on free tiers, no credit card required to run or contribute |
 | 🔄 **Translation Support** | LibreTranslate integration for open source bilingual translation |
@@ -173,7 +173,7 @@ flowchart LR
 |:--------|:----:|:------------|
 | **Petition Signing** | ✍️ | Sign the petition with your name, email, LinkedIn URL, and document type with a real time progress bar toward 10,000 signatures |
 | **AI Appeal Generation** | 🤖 | Generate a professional appeal letter in English or Urdu instantly using Gemini 2.0 Flash and LangChain structured output |
-| **Voice Input** | 🎤 | Speak your appeal and have it converted to text automatically via Cloudflare Workers AI Whisper Large v3 Turbo |
+| **Voice Input** | 🎤 | Speak your appeal and have it converted to text automatically via browser-native Web Speech API |
 | **Language Switcher** | 🌐 | Toggle between English and Urdu at any time on any page |
 | **Urdu RTL Support** | 🔄 | Full right to left rendering for a native Urdu reading experience |
 | **Translation Support** | 🈯 | LibreTranslate powered open source translation |
@@ -199,7 +199,7 @@ flowchart LR
 | ☁️ **Vercel** | Hosting and deployment | ✅ Free, no credit card |
 | 🗄️ **Supabase PostgreSQL** | Database for signatures and stats | ✅ Free tier project |
 | 🤖 **Google Gemini 2.0 Flash + LangChain** | AI powered structured appeal generation | ✅ Free tier quota |
-| 🎤 **Cloudflare Workers AI (Whisper Large v3 Turbo)** | Speech to text for voice input | ✅ Free Workers AI |
+| 🎤 **Web Speech API** | Browser-native speech-to-text recognition | ✅ Built-in Browser API |
 | 🈯 **LibreTranslate** | Open source translation support | ✅ Fully open source |
 | 🌐 **next-intl v4** | Internationalization with Urdu RTL | ✅ Open source library |
 | 💅 **Tailwind CSS v4** | Styling and design system | ✅ Open source |
@@ -216,8 +216,6 @@ flowchart LR
 ![Tailwind](https://skillicons.dev/icons?i=tailwind)
 &nbsp;
 ![Supabase](https://skillicons.dev/icons?i=supabase)
-&nbsp;
-![Cloudflare](https://skillicons.dev/icons?i=cloudflare)
 &nbsp;
 ![Vercel](https://skillicons.dev/icons?i=vercel)
 
@@ -237,14 +235,13 @@ Awaaz-Pakistan/
 │   │   ├── 📂 api/
 │   │   │   ├── 📂 sign/              # GET signature count | POST new signature
 │   │   │   ├── 📂 generate-appeal/   # Gemini 2.0 Flash + LangChain appeal generation
-│   │   │   ├── 📂 transcribe/        # Cloudflare Whisper voice transcription proxy
 │   │   │   └── 📂 translate/         # LibreTranslate open source translation
 │   │   ├── globals.css               # Global styles
 │   │   └── layout.js                 # Root layout
 │   │
 │   ├── 📂 components/
 │   │   ├── LanguageSwitcher.jsx      # EN / UR toggle with locale routing
-│   │   └── VoiceInput.jsx            # Microphone component with Whisper integration
+│   │   └── VoiceInput.jsx            # Speech input component powered by Web Speech API
 │   │
 │   ├── 📂 lib/
 │   │   ├── langchain-chain.js        # Gemini 2.0 Flash + LangChain structured output chain
@@ -260,10 +257,6 @@ Awaaz-Pakistan/
 │   ├── en.json                       # English translation strings
 │   └── ur.json                       # Urdu translation strings
 │
-├── 📂 worker/
-│   └── index.js                      # Cloudflare Worker (Whisper Large v3 Turbo)
-│
-├── 🔧 wrangler.toml                  # Cloudflare Workers config (name: awaaz-transcribe)
 ├── 🔒 .env.local                     # Local environment variables (gitignored)
 ├── 📦 package.json                   # Project dependencies
 ├── 🔷 tsconfig.json                  # TypeScript configuration
@@ -274,9 +267,7 @@ Awaaz-Pakistan/
 
 - `src/app/[locale]/` keeps every page locale aware so English and Urdu routes share the same components but render with the correct language and text direction
 - `src/lib/` centralizes all third party integrations: Supabase, Gemini via LangChain, and Zod schema validation
-- `src/components/VoiceInput.jsx` records microphone audio and sends it to the `/api/transcribe` route, which proxies to the Cloudflare Worker
-- `worker/index.js` is a standalone Cloudflare Worker deployed separately from the main Next.js app, running Whisper Large v3 Turbo via the `env.AI` binding
-- `wrangler.toml` configures the Cloudflare Worker with name `awaaz-transcribe` and the `[ai]` binding
+- `src/components/VoiceInput.jsx` processes speech-to-text directly in the browser using the Web Speech API (`SpeechRecognition` / `webkitSpeechRecognition`)
 - `messages/` holds all UI strings so the app is fully translatable without touching component code
 
 ---
@@ -325,21 +316,7 @@ Fill in the values described in the [Environment Variables](#-environment-variab
 </details>
 
 <details open>
-<summary><b>4️⃣ Deploy the Cloudflare Whisper Worker</b></summary>
-<br/>
-
-```bash
-npm install -g wrangler
-wrangler login
-wrangler deploy
-```
-
-Copy the deployed Worker URL into `NEXT_PUBLIC_CLOUDFLARE_WORKER_URL` in your `.env.local`.
-
-</details>
-
-<details open>
-<summary><b>5️⃣ Set Up the Database</b></summary>
+<summary><b>4️⃣ Set Up the Database</b></summary>
 <br/>
 
 Run the SQL from the [Database Schema](#️-database-schema) section inside your Supabase SQL editor.
@@ -347,7 +324,7 @@ Run the SQL from the [Database Schema](#️-database-schema) section inside your
 </details>
 
 <details open>
-<summary><b>6️⃣ Run the Development Server</b></summary>
+<summary><b>5️⃣ Run the Development Server</b></summary>
 <br/>
 
 ```bash
@@ -369,7 +346,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser. 🎉
 | `GEMINI_API_KEY` | Your Gemini API key for appeal generation | Google AI Studio at aistudio.google.com |
 | `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL | Supabase Dashboard then Settings then API |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase anon public key | Supabase Dashboard then Settings then API |
-| `NEXT_PUBLIC_CLOUDFLARE_WORKER_URL` | URL of the deployed `awaaz-transcribe` Cloudflare Worker | Cloudflare Workers Dashboard after deploying |
 
 </div>
 
@@ -377,7 +353,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser. 🎉
 GEMINI_API_KEY=your_gemini_api_key_here
 NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key_here
-NEXT_PUBLIC_CLOUDFLARE_WORKER_URL=https://awaaz-transcribe.your-subdomain.workers.dev
 ```
 
 > ⚠️ **Never commit your `.env.local` file.** It is already excluded via `.gitignore`.
@@ -451,39 +426,9 @@ create policy "Allow public read" on petition_stats
 
 1. 📤 Push your fork to GitHub
 2. 📥 Import the repository at [vercel.com/new](https://vercel.com/new)
-3. 🔑 Add all four environment variables in the Vercel project settings
+3. 🔑 Add all three environment variables in the Vercel project settings (`GEMINI_API_KEY`, `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`)
 4. ⚙️ Vercel auto detects Next.js and configures the build
 5. 🚀 Click **Deploy**
-
-</details>
-
-<details open>
-<summary><b>🎤 Deploy the Cloudflare Whisper Worker</b></summary>
-<br/>
-
-```bash
-# Install Wrangler globally
-npm install -g wrangler
-
-# Authenticate with your Cloudflare account
-wrangler login
-
-# Deploy the worker from the repo root (wrangler.toml points to worker/index.js)
-wrangler deploy
-```
-
-The worker is configured in `wrangler.toml`:
-
-```toml
-name = "awaaz-transcribe"
-main = "worker/index.js"
-compatibility_date = "2026-08-08"
-
-[ai]
-binding = "AI"
-```
-
-Copy the deployed Worker URL into `NEXT_PUBLIC_CLOUDFLARE_WORKER_URL` in your environment variables.
 
 </details>
 
@@ -540,7 +485,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE)
 - 🇵🇰 Every Pakistani professional who shared their story and pushed this problem into the open
 - 🤖 **Google Gemini 2.0 Flash** and **LangChain** for making AI powered appeal generation possible at zero cost
 - 🗄️ **Supabase** for a fast, free, and reliable database with Row Level Security
-- ☁️ **Cloudflare Workers AI** for free, low latency speech to text via Whisper Large v3 Turbo
+- 🎙️ **Web Speech API** for browser-native, zero-latency speech-to-text recognition
 - 🈯 **LibreTranslate** for open source translation support
 - ▲ **Vercel** for effortless, free Next.js hosting
 - 🌐 **next-intl** for powerful internationalization with native RTL support

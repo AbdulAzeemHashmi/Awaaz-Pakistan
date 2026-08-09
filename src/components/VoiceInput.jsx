@@ -1,69 +1,104 @@
 'use client';
 
-import { useState } from 'react';
-import { useLocale } from 'next-intl';
+import { useState, useEffect, useRef } from 'react';
+import { useLocale, useTranslations } from 'next-intl';
 
 export default function VoiceInput({ onTranscript, disabled }) {
     const [isRecording, setIsRecording] = useState(false);
+    const [isSupported, setIsSupported] = useState(true);
+    const recognitionRef = useRef(null);
     const locale = useLocale();
+    const t = useTranslations();
 
-    const startRecording = async () => {
+    useEffect(() => {
+        const SpeechRecognition = typeof window !== 'undefined' && (window.SpeechRecognition || window.webkitSpeechRecognition);
+        if (!SpeechRecognition) {
+            setIsSupported(false);
+        }
+    }, []);
+
+    const toggleRecording = () => {
+        const SpeechRecognition = typeof window !== 'undefined' && (window.SpeechRecognition || window.webkitSpeechRecognition);
+        
+        if (!SpeechRecognition) {
+            alert("Web Speech API is not supported in this browser. Please use Google Chrome, Microsoft Edge, or Apple Safari.");
+            return;
+        }
+
+        if (isRecording) {
+            if (recognitionRef.current) {
+                recognitionRef.current.stop();
+            }
+            setIsRecording(false);
+            return;
+        }
+
         try {
-            const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-            const mediaRecorder = new MediaRecorder(stream);
-            const chunks = [];
+            const recognition = new SpeechRecognition();
+            recognitionRef.current = recognition;
 
-            mediaRecorder.ondataavailable = (e) => chunks.push(e.data);
-            mediaRecorder.onstop = async () => {
-                const blob = new Blob(chunks, { type: 'audio/webm' });
-                const formData = new FormData();
-                formData.append('audio', blob);
-                formData.append('language', locale === 'ur' ? 'ur' : 'en');
+            recognition.continuous = true;
+            recognition.interimResults = true;
+            recognition.lang = locale === 'ur' ? 'ur-PK' : 'en-US';
 
-                try {
-                    // Call our server-side proxy instead of the Worker directly.
-                    // This avoids CORS — the server forwards the audio to Cloudflare.
-                    const response = await fetch('/api/transcribe', {
-                        method: 'POST',
-                        body: formData
-                    });
-                    
-                    if (!response.ok) throw new Error('Failed to transcribe audio');
-                    
-                    const data = await response.json();
-                    onTranscript(data.text);
-                } catch (err) {
-                    console.error("Transcription error:", err);
-                    alert("Failed to transcribe audio. Please try again.");
+            recognition.onstart = () => {
+                setIsRecording(true);
+            };
+
+            recognition.onresult = (event) => {
+                let currentText = '';
+                for (let i = 0; i < event.results.length; i++) {
+                    currentText += event.results[i][0].transcript;
+                }
+                if (currentText) {
+                    onTranscript(currentText);
                 }
             };
 
-            mediaRecorder.start();
-            setIsRecording(true);
-
-            setTimeout(() => {
-                if (mediaRecorder.state !== 'inactive') {
-                    mediaRecorder.stop();
-                    setIsRecording(false);
-                    stream.getTracks().forEach(track => track.stop());
+            recognition.onerror = (event) => {
+                console.error("Speech recognition error:", event.error);
+                setIsRecording(false);
+                if (event.error === 'not-allowed') {
+                    alert("Microphone access denied. Please allow microphone permission in your browser.");
+                } else if (event.error !== 'no-speech' && event.error !== 'aborted') {
+                    alert(`Speech recognition error: ${event.error}`);
                 }
-            }, 10000); // Auto-stop after 10 seconds
+            };
 
+            recognition.onend = () => {
+                setIsRecording(false);
+            };
+
+            recognition.start();
         } catch (error) {
-            console.error("Recording error:", error);
+            console.error("Failed to start speech recognition:", error);
             setIsRecording(false);
-            alert("Please allow microphone access or use Google Chrome.");
         }
     };
 
     return (
         <button
             type="button"
-            onClick={startRecording}
-            disabled={disabled || isRecording}
-            className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 disabled:opacity-50"
+            onClick={toggleRecording}
+            disabled={disabled || !isSupported}
+            title={!isSupported ? "Voice input is not supported in this browser" : (isRecording ? t('voice_input_stop') : t('voice_input'))}
+            className={`px-4 py-2 text-white font-medium rounded-md transition-all flex items-center justify-center gap-2 ${
+                isRecording 
+                    ? "bg-red-600 hover:bg-red-700 animate-pulse shadow-lg shadow-red-500/50" 
+                    : "bg-blue-600 hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+            }`}
         >
-            {isRecording ? "⏺️ Recording..." : "🎤"}
+            {isRecording ? (
+                <>
+                    <span className="w-2.5 h-2.5 bg-white rounded-full animate-ping" />
+                    <span>{t('voice_input_stop')}</span>
+                </>
+            ) : (
+                <>
+                    <span>🎤</span>
+                    <span className="hidden sm:inline">{t('voice_input')}</span>
+                </>
+            )}
         </button>
     );
-}
+}
