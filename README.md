@@ -37,16 +37,15 @@
 3. [🔄 How It Works](#-how-it-works)
 4. [🚀 Live Demo](#-live-demo)
 5. [🎯 Features](#-features)
-6. [🖼️ Screenshots](#️-screenshots)
-7. [🛠️ Tech Stack](#️-tech-stack)
-8. [📁 Project Structure](#-project-structure)
-9. [⚙️ Setup and Installation](#️-setup-and-installation)
-10. [🔑 Environment Variables](#-environment-variables)
-11. [🗄️ Database Schema](#️-database-schema)
-12. [☁️ Deployment](#️-deployment)
-13. [🤝 How to Contribute](#-how-to-contribute)
-14. [📄 License](#-license)
-15. [🙏 Acknowledgments](#-acknowledgments)
+6. [🛠️ Tech Stack](#️-tech-stack)
+7. [📁 Project Structure](#-project-structure)
+8. [⚙️ Setup and Installation](#️-setup-and-installation)
+9. [🔑 Environment Variables](#-environment-variables)
+10. [🗄️ Database Schema](#️-database-schema)
+11. [☁️ Deployment](#️-deployment)
+12. [🤝 How to Contribute](#-how-to-contribute)
+13. [📄 License](#-license)
+14. [🙏 Acknowledgments](#-acknowledgments)
 
 ---
 
@@ -132,24 +131,6 @@ flowchart LR
 </div>
 
 🎉 Every feature above is live and functional on the deployed demo.
-
----
-
-## 🖼️ Screenshots
-
-<div align="center">
-
-| English Interface | Urdu Interface (RTL) |
-|:---:|:---:|
-| 🖼️ *screenshot placeholder* | 🖼️ *screenshot placeholder* |
-
-| Petition Page | AI Appeal Generator |
-|:---:|:---:|
-| 🖼️ *screenshot placeholder* | 🖼️ *screenshot placeholder* |
-
-> 📸 Replace these placeholders with real screenshots showing the English layout, the mirrored Urdu RTL layout, the petition counter, and the AI appeal generator in action.
-
-</div>
 
 ---
 
