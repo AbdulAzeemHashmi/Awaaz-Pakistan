@@ -1,26 +1,29 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00BFFF,50:0ea5e9,100:14532d&height=280&section=header&text=Awaaz%20Pakistan%20%F0%9F%87%B5%F0%9F%87%B0&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=34&desc=Your%20Voice%2C%20Unrestricted.%20Your%20Career%2C%20Restored.&descAlignY=58&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00BFFF,40:0ea5e9,80:1d4ed8,100:14532d&height=300&section=header&text=Awaaz%20Pakistan%20%F0%9F%87%B5%F0%9F%87%B0&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Your%20Voice%2C%20Unrestricted.%20Your%20Career%2C%20Restored.&descAlignY=58&descSize=20" width="100%"/>
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1200&color=00BFFF&center=true&vCenter=true&width=700&lines=Sign+the+Petition+%E2%9C%8D%EF%B8%8F;Generate+an+AI+Powered+Appeal+%F0%9F%A4%96;Speak+It+or+Type+It+%F0%9F%8E%A4;English+or+Urdu%2C+Your+Choice+%F0%9F%8C%90;100%25+Free%2C+Zero+Credit+Card+%F0%9F%92%B0" alt="Typing animation" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1100&color=00BFFF&center=true&vCenter=true&width=750&lines=Sign+the+Petition+%E2%9C%8D%EF%B8%8F;Generate+an+AI+Powered+Appeal+%F0%9F%A4%96;Speak+It+or+Type+It+%F0%9F%8E%A4;English+or+Urdu%2C+Your+Choice+%F0%9F%8C%90;100%25+Free+%7C+Zero+Credit+Card+Required+%F0%9F%92%B0;Built+for+Pakistani+Professionals+%F0%9F%87%B5%F0%9F%87%B0" alt="Typing SVG animation"/>
 
-<br/>
+<br/><br/>
 
-[![Live Demo](https://img.shields.io/badge/🔗_Live_Demo-View_Now-00C7B7?style=for-the-badge&logo=vercel&logoColor=white)](https://awaaz-pakistan.vercel.app/en)
+[![Live Demo](https://img.shields.io/badge/%F0%9F%94%97_Live_Demo-View_Now-00C7B7?style=for-the-badge&logo=vercel&logoColor=white)](https://awaaz-pakistan.vercel.app/en)
 [![Next.js](https://img.shields.io/badge/Next.js-16.3.0-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
-[![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge)](https://github.com/AbdulAzeemHashmi/Awaaz-Pakistan/pulls)
-[![Made in Pakistan](https://img.shields.io/badge/Made_in-Pakistan_🇵🇰-00BFFF?style=for-the-badge)](https://github.com/AbdulAzeemHashmi)
+[![Made in Pakistan](https://img.shields.io/badge/Made_in-Pakistan_%F0%9F%87%B5%F0%9F%87%B0-00BFFF?style=for-the-badge)](https://github.com/AbdulAzeemHashmi)
 
 <br/>
 
-<img src="https://img.shields.io/github/stars/AbdulAzeemHashmi/Awaaz-Pakistan?style=social" alt="stars"/>
+<img src="https://img.shields.io/github/stars/AbdulAzeemHashmi/Awaaz-Pakistan?style=social" alt="GitHub Stars"/>
 &nbsp;
-<img src="https://img.shields.io/github/forks/AbdulAzeemHashmi/Awaaz-Pakistan?style=social" alt="forks"/>
+<img src="https://img.shields.io/github/forks/AbdulAzeemHashmi/Awaaz-Pakistan?style=social" alt="GitHub Forks"/>
 &nbsp;
-<img src="https://img.shields.io/github/last-commit/AbdulAzeemHashmi/Awaaz-Pakistan?color=00BFFF" alt="last commit"/>
+<img src="https://img.shields.io/github/last-commit/AbdulAzeemHashmi/Awaaz-Pakistan?color=00BFFF" alt="Last Commit"/>
+&nbsp;
+<img src="https://img.shields.io/github/issues/AbdulAzeemHashmi/Awaaz-Pakistan?color=f97316" alt="Open Issues"/>
 
 <br/><br/>
 
@@ -33,7 +36,7 @@
 </div>
 
 <div align="center">
-<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="360" alt="advocacy platform animation"/>
+<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="380" alt="Advocacy platform animation"/>
 </div>
 
 ---
@@ -64,9 +67,9 @@
 <div align="center">
 
 ```
-🔒 LinkedIn requires an NFC enabled e-Passport to restore restricted accounts.
-📊 Estimated 99% of Pakistanis do NOT hold one.
-🇵🇰 CNIC (NADRA verified, globally trusted) is simply not accepted.
+🔒  LinkedIn requires an NFC enabled e-Passport to restore restricted accounts.
+📊  Estimated 99% of Pakistanis do NOT hold one.
+🇵🇰  CNIC (NADRA verified, globally trusted) is simply not accepted.
 ```
 
 </div>
@@ -93,10 +96,11 @@
 | Feature | Description |
 |:--------|:------------|
 | ✍️ **Collective Petition** | Sign alongside thousands to demand LinkedIn accept CNICs and NADRA verified documents |
-| 🤖 **AI Appeal Letters** | Powered by Gemini API and LangChain, generated instantly in English or Urdu |
-| 🎤 **Voice Input** | Speak your situation instead of typing, powered by Cloudflare Workers AI Whisper |
+| 🤖 **AI Appeal Letters** | Powered by Gemini 2.0 Flash and LangChain, generated instantly in English or Urdu |
+| 🎤 **Voice Input** | Speak your situation instead of typing, powered by Cloudflare Workers AI Whisper Large v3 Turbo |
 | 🌐 **Full Bilingual UI** | Complete Urdu RTL rendering, not a bolted on translation |
 | 💰 **Zero Cost Infrastructure** | Built entirely on free tiers, no credit card required to run or contribute |
+| 🔄 **Translation Support** | LibreTranslate integration for open source bilingual translation |
 
 📌 The goal is simple: turn thousands of individual, ignored complaints into one loud, well documented, unified voice that LinkedIn cannot ignore.
 
@@ -111,9 +115,9 @@ flowchart LR
     A[🌐 Choose English or Urdu] --> B[✍️ Sign the Petition]
     B --> C{🎤 Type or Speak?}
     C -->|⌨️ Type| D[📝 Describe Your Situation]
-    C -->|🎤 Speak| E[🎤 Cloudflare Whisper Transcribes]
+    C -->|🎤 Speak| E[🎤 Whisper Large v3 Turbo Transcribes]
     E --> D
-    D --> F[🤖 Gemini + LangChain Generate Appeal]
+    D --> F[🤖 Gemini 2.0 Flash + LangChain Generate Appeal]
     F --> G[📄 Review Bilingual Appeal Letter]
     G --> H[📤 Submit to LinkedIn Support]
     G --> I[📢 Share Petition to Grow Reach]
@@ -133,10 +137,10 @@ flowchart LR
 
 **Step by Step:**
 
-1. 🌐 **Choose your language**, English or Urdu, and the entire interface adapts including RTL layout for Urdu
-2. ✍️ **Sign the petition** with your name and message, adding to the collective count
-3. 🎤 **Input your situation** by typing your story or speaking it directly and letting Whisper transcribe
-4. 🤖 **Gemini generates** a professional, bilingual appeal letter tailored to your specific situation
+1. 🌐 **Choose your language**, English or Urdu, and the entire interface adapts including full RTL layout for Urdu
+2. ✍️ **Sign the petition** with your name, email, LinkedIn URL, and document type, adding to the collective count
+3. 🎤 **Input your situation** by typing your story or speaking it directly and letting Whisper transcribe it
+4. 🤖 **Gemini 2.0 Flash generates** a professional, bilingual appeal letter with a subject line, English body, Urdu body, and submission instructions
 5. 📤 **Submit the letter** directly to LinkedIn support with one click
 6. 📢 **Share the petition** to grow reach and pressure LinkedIn into accepting NADRA documents
 
@@ -148,7 +152,12 @@ flowchart LR
 
 ### 🔗 [awaaz-pakistan.vercel.app/en](https://awaaz-pakistan.vercel.app/en)
 
-[![Open Live App](https://img.shields.io/badge/🚀%20Open%20Live%20App-awaaz--pakistan.vercel.app-00C7B7?style=for-the-badge&logo=vercel&logoColor=white)](https://awaaz-pakistan.vercel.app/en)
+[![Open Live App](https://img.shields.io/badge/%F0%9F%9A%80%20Open%20Live%20App-awaaz--pakistan.vercel.app-00C7B7?style=for-the-badge&logo=vercel&logoColor=white)](https://awaaz-pakistan.vercel.app/en)
+
+| Language | URL |
+|:---------|:----|
+| 🇬🇧 English | [awaaz-pakistan.vercel.app/en](https://awaaz-pakistan.vercel.app/en) |
+| 🇵🇰 Urdu (RTL) | [awaaz-pakistan.vercel.app/ur](https://awaaz-pakistan.vercel.app/ur) |
 
 </div>
 
@@ -162,14 +171,16 @@ flowchart LR
 
 | Feature | Icon | Description |
 |:--------|:----:|:------------|
-| **Petition Signing** | ✍️ | Sign the petition with a real time signature counter |
-| **AI Appeal Generation** | 🤖 | Generate a professional appeal letter in English or Urdu instantly |
-| **Voice Input** | 🎤 | Speak your appeal and have it converted to text automatically |
+| **Petition Signing** | ✍️ | Sign the petition with your name, email, LinkedIn URL, and document type with a real time progress bar toward 10,000 signatures |
+| **AI Appeal Generation** | 🤖 | Generate a professional appeal letter in English or Urdu instantly using Gemini 2.0 Flash and LangChain structured output |
+| **Voice Input** | 🎤 | Speak your appeal and have it converted to text automatically via Cloudflare Workers AI Whisper Large v3 Turbo |
 | **Language Switcher** | 🌐 | Toggle between English and Urdu at any time on any page |
 | **Urdu RTL Support** | 🔄 | Full right to left rendering for a native Urdu reading experience |
+| **Translation Support** | 🈯 | LibreTranslate powered open source translation |
 | **Social Sharing** | 📢 | Share the petition directly to social platforms to grow visibility |
-| **Support Request Generator** | 📝 | Generate a pre formatted request ready to submit to LinkedIn support |
+| **Support Request Generator** | 📝 | Generate a pre formatted request with subject line, bilingual body, and user instructions ready to submit to LinkedIn support |
 | **Zero Cost Infrastructure** | 💰 | Runs entirely on free tier services, no credit card required |
+| **Document Type Selection** | 🪪 | Choose from CNIC, Smart CNIC, regular passport, or e-Passport during signing |
 
 </div>
 
@@ -183,20 +194,24 @@ flowchart LR
 
 | Technology | Purpose | Free Tier |
 |:-----------|:--------|:----------|
-| ⚡ **Next.js 16** (App Router) with TypeScript | Full stack framework and routing | ✅ Open source |
+| ⚡ **Next.js 16.3** with App Router and TypeScript | Full stack framework and routing | ✅ Open source |
+| ⚛️ **React 19.2** | UI component library | ✅ Open source |
 | ☁️ **Vercel** | Hosting and deployment | ✅ Free, no credit card |
 | 🗄️ **Supabase PostgreSQL** | Database for signatures and stats | ✅ Free tier project |
-| 🤖 **Google Gemini API + LangChain** | AI powered appeal generation | ✅ Free tier quota |
-| 🎤 **Cloudflare Workers AI Whisper** | Speech to text for voice input | ✅ Free Workers AI |
+| 🤖 **Google Gemini 2.0 Flash + LangChain** | AI powered structured appeal generation | ✅ Free tier quota |
+| 🎤 **Cloudflare Workers AI (Whisper Large v3 Turbo)** | Speech to text for voice input | ✅ Free Workers AI |
 | 🈯 **LibreTranslate** | Open source translation support | ✅ Fully open source |
-| 🌐 **next-intl** | Internationalization with Urdu RTL | ✅ Open source library |
+| 🌐 **next-intl v4** | Internationalization with Urdu RTL | ✅ Open source library |
 | 💅 **Tailwind CSS v4** | Styling and design system | ✅ Open source |
+| 🔷 **Zod v4** | Schema validation for AI structured output | ✅ Open source |
 
 <br/>
 
 ![Next.js](https://skillicons.dev/icons?i=nextjs)
 &nbsp;
 ![TypeScript](https://skillicons.dev/icons?i=typescript)
+&nbsp;
+![React](https://skillicons.dev/icons?i=react)
 &nbsp;
 ![Tailwind](https://skillicons.dev/icons?i=tailwind)
 &nbsp;
@@ -214,43 +229,55 @@ flowchart LR
 
 ```
 Awaaz-Pakistan/
-├── 📂 app/
-│   ├── 📂 [locale]/                # Locale scoped routes (en, ur)
-│   │   ├── page.tsx                # Landing page and petition form
-│   │   ├── 📂 appeal/              # AI appeal generator flow
-│   │   └── layout.tsx              # Locale aware layout with RTL support
-│   └── 📂 api/
-│       ├── 📂 sign/                # Petition signature endpoint
-│       ├── 📂 generate-appeal/     # Gemini + LangChain appeal generation
-│       └── 📂 voice/               # Cloudflare Whisper voice transcription proxy
-│
-├── 📂 components/                  # Shared UI components
-├── 📂 lib/
-│   ├── supabase.ts                 # Supabase client setup
-│   ├── gemini.ts                   # Gemini and LangChain integration
-│   └── i18n.ts                     # next-intl configuration
+├── 📂 src/
+│   ├── 📂 app/
+│   │   ├── 📂 [locale]/              # Locale scoped routes (en, ur)
+│   │   │   ├── page.js               # Main petition + appeal generator page
+│   │   │   └── layout.js             # Locale aware layout with RTL support
+│   │   ├── 📂 api/
+│   │   │   ├── 📂 sign/              # GET signature count | POST new signature
+│   │   │   ├── 📂 generate-appeal/   # Gemini 2.0 Flash + LangChain appeal generation
+│   │   │   ├── 📂 transcribe/        # Cloudflare Whisper voice transcription proxy
+│   │   │   └── 📂 translate/         # LibreTranslate open source translation
+│   │   ├── globals.css               # Global styles
+│   │   └── layout.js                 # Root layout
+│   │
+│   ├── 📂 components/
+│   │   ├── LanguageSwitcher.jsx      # EN / UR toggle with locale routing
+│   │   └── VoiceInput.jsx            # Microphone component with Whisper integration
+│   │
+│   ├── 📂 lib/
+│   │   ├── langchain-chain.js        # Gemini 2.0 Flash + LangChain structured output chain
+│   │   ├── schemas.js                # Zod schema for AI structured appeal output
+│   │   └── supabase.js               # Supabase client setup
+│   │
+│   ├── 📂 i18n/
+│   │   └── request.ts                # next-intl locale request configuration
+│   │
+│   └── proxy.ts                      # next-intl middleware for locale routing
 │
 ├── 📂 messages/
-│   ├── en.json                     # English translation strings
-│   └── ur.json                     # Urdu translation strings
+│   ├── en.json                       # English translation strings
+│   └── ur.json                       # Urdu translation strings
 │
-├── 📂 workers/
-│   └── 📂 whisper-worker/          # Cloudflare Worker for speech to text
+├── 📂 worker/
+│   └── index.js                      # Cloudflare Worker (Whisper Large v3 Turbo)
 │
-├── 📂 database/
-│   └── schema.sql                  # Supabase table definitions
-│
-├── 🔒 .env.example                 # Template for required variables
-├── 📦 package.json                 # Project dependencies
-└── 📘 README.md                    # You are here
+├── 🔧 wrangler.toml                  # Cloudflare Workers config (name: awaaz-transcribe)
+├── 🔒 .env.local                     # Local environment variables (gitignored)
+├── 📦 package.json                   # Project dependencies
+├── 🔷 tsconfig.json                  # TypeScript configuration
+└── 📘 README.md                      # You are here
 ```
 
 **Key folders explained:**
 
-- `app/[locale]/` keeps every page locale aware so English and Urdu routes share the same components but render with the correct language and text direction
-- `lib/` centralizes all third party integrations: Supabase, Gemini, and internationalization
-- `workers/whisper-worker/` is a standalone Cloudflare Worker deployed separately from the main Next.js app
-- `database/schema.sql` is the single source of truth for the Supabase table structure
+- `src/app/[locale]/` keeps every page locale aware so English and Urdu routes share the same components but render with the correct language and text direction
+- `src/lib/` centralizes all third party integrations: Supabase, Gemini via LangChain, and Zod schema validation
+- `src/components/VoiceInput.jsx` records microphone audio and sends it to the `/api/transcribe` route, which proxies to the Cloudflare Worker
+- `worker/index.js` is a standalone Cloudflare Worker deployed separately from the main Next.js app, running Whisper Large v3 Turbo via the `env.AI` binding
+- `wrangler.toml` configures the Cloudflare Worker with name `awaaz-transcribe` and the `[ai]` binding
+- `messages/` holds all UI strings so the app is fully translatable without touching component code
 
 ---
 
@@ -259,10 +286,10 @@ Awaaz-Pakistan/
 ### ✅ Prerequisites
 
 - 🟢 Node.js v18 or later
-- 📦 npm or yarn
-- 🗄️ A free Supabase account and project ([supabase.com](https://supabase.com))
-- 🔑 A free Google Gemini API key ([aistudio.google.com](https://aistudio.google.com))
-- ☁️ A free Cloudflare account with Workers AI enabled ([cloudflare.com](https://cloudflare.com))
+- 📦 npm
+- 🗄️ A free Supabase account and project at [supabase.com](https://supabase.com)
+- 🔑 A free Google Gemini API key at [aistudio.google.com](https://aistudio.google.com)
+- ☁️ A free Cloudflare account with Workers AI enabled at [cloudflare.com](https://cloudflare.com)
 
 <details open>
 <summary><b>1️⃣ Clone the Repository</b></summary>
@@ -298,7 +325,21 @@ Fill in the values described in the [Environment Variables](#-environment-variab
 </details>
 
 <details open>
-<summary><b>4️⃣ Set Up the Database</b></summary>
+<summary><b>4️⃣ Deploy the Cloudflare Whisper Worker</b></summary>
+<br/>
+
+```bash
+npm install -g wrangler
+wrangler login
+wrangler deploy
+```
+
+Copy the deployed Worker URL into `NEXT_PUBLIC_CLOUDFLARE_WORKER_URL` in your `.env.local`.
+
+</details>
+
+<details open>
+<summary><b>5️⃣ Set Up the Database</b></summary>
 <br/>
 
 Run the SQL from the [Database Schema](#️-database-schema) section inside your Supabase SQL editor.
@@ -306,7 +347,7 @@ Run the SQL from the [Database Schema](#️-database-schema) section inside your
 </details>
 
 <details open>
-<summary><b>5️⃣ Run the Development Server</b></summary>
+<summary><b>6️⃣ Run the Development Server</b></summary>
 <br/>
 
 ```bash
@@ -325,10 +366,10 @@ Open [http://localhost:3000](http://localhost:3000) in your browser. 🎉
 
 | Variable | Description | Where to Get It |
 |:---------|:------------|:----------------|
-| `GEMINI_API_KEY` | Your Gemini API key | Google AI Studio, aistudio.google.com |
+| `GEMINI_API_KEY` | Your Gemini API key for appeal generation | Google AI Studio at aistudio.google.com |
 | `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL | Supabase Dashboard then Settings then API |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase anon public key | Supabase Dashboard then Settings then API |
-| `NEXT_PUBLIC_CLOUDFLARE_WORKER_URL` | Cloudflare Worker URL | Cloudflare Workers Dashboard after deploying |
+| `NEXT_PUBLIC_CLOUDFLARE_WORKER_URL` | URL of the deployed `awaaz-transcribe` Cloudflare Worker | Cloudflare Workers Dashboard after deploying |
 
 </div>
 
@@ -336,7 +377,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser. 🎉
 GEMINI_API_KEY=your_gemini_api_key_here
 NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key_here
-NEXT_PUBLIC_CLOUDFLARE_WORKER_URL=https://your-worker.your-subdomain.workers.dev
+NEXT_PUBLIC_CLOUDFLARE_WORKER_URL=https://awaaz-transcribe.your-subdomain.workers.dev
 ```
 
 > ⚠️ **Never commit your `.env.local` file.** It is already excluded via `.gitignore`.
@@ -421,10 +462,25 @@ create policy "Allow public read" on petition_stats
 <br/>
 
 ```bash
-cd workers/whisper-worker
+# Install Wrangler globally
 npm install -g wrangler
+
+# Authenticate with your Cloudflare account
 wrangler login
+
+# Deploy the worker from the repo root (wrangler.toml points to worker/index.js)
 wrangler deploy
+```
+
+The worker is configured in `wrangler.toml`:
+
+```toml
+name = "awaaz-transcribe"
+main = "worker/index.js"
+compatibility_date = "2026-08-08"
+
+[ai]
+binding = "AI"
 ```
 
 Copy the deployed Worker URL into `NEXT_PUBLIC_CLOUDFLARE_WORKER_URL` in your environment variables.
@@ -461,6 +517,14 @@ Contributions are welcome and genuinely appreciated. This project exists because
 4. 🔀 Push to your branch: `git push origin feature/your-feature-name`
 5. 📬 Open a Pull Request describing what changed and why
 
+### 💡 Ideas for Contributions
+
+- 🌍 Additional language support beyond English and Urdu
+- 🎨 UI improvements and animations
+- 🔤 Urdu translation accuracy and RTL layout fixes
+- 🧪 Unit and integration tests
+- 📊 Analytics and petition impact tracking
+
 > 💡 Translation improvements for Urdu accuracy and RTL layout fixes are especially welcome!
 
 ---
@@ -474,11 +538,13 @@ This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE)
 ## 🙏 Acknowledgments
 
 - 🇵🇰 Every Pakistani professional who shared their story and pushed this problem into the open
-- 🤖 **Google Gemini** and **LangChain** for making AI powered appeal generation possible at zero cost
-- 🗄️ **Supabase** for a fast, free, and reliable database
-- ☁️ **Cloudflare Workers AI** for free, low latency speech to text via Whisper
+- 🤖 **Google Gemini 2.0 Flash** and **LangChain** for making AI powered appeal generation possible at zero cost
+- 🗄️ **Supabase** for a fast, free, and reliable database with Row Level Security
+- ☁️ **Cloudflare Workers AI** for free, low latency speech to text via Whisper Large v3 Turbo
 - 🈯 **LibreTranslate** for open source translation support
 - ▲ **Vercel** for effortless, free Next.js hosting
+- 🌐 **next-intl** for powerful internationalization with native RTL support
+- 🔷 **Zod** for robust schema validation of AI structured output
 - 🏆 The open source community whose tools made a zero cost advocacy platform possible
 
 ---
@@ -494,7 +560,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE)
 **⭐ If Awaaz Pakistan matters to you, star the repo and help it reach more people.**
 
 <a href="https://github.com/AbdulAzeemHashmi/Awaaz-Pakistan/stargazers">
-<img src="https://img.shields.io/badge/⭐%20Star%20this%20repo-yellow?style=for-the-badge" alt="Star this repo"/>
+<img src="https://img.shields.io/badge/%E2%AD%90%20Star%20this%20repo-yellow?style=for-the-badge" alt="Star this repo"/>
 </a>
 
 <br/><br/>
