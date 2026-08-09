@@ -1,11 +1,11 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
-import './globals.css';
+import '../globals.css'; // ✅ Fixed: imports from src/app/globals.css
 
 export default async function RootLayout({ children, params: { locale } }) {
     let messages;
     try {
-        messages = (await import(`../../messages/${locale}.json`)).default;
+        messages = (await import(`../../../messages/${locale}.json`)).default;
     } catch (error) {
         notFound();
     }
