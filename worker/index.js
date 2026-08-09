@@ -1,19 +1,38 @@
+const CORS_HEADERS = {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+};
+
 export default {
     async fetch(request, env) {
-        if (request.method !== 'POST') {
-            return new Response('Method not allowed', { status: 405 });
+        // Handle CORS preflight
+        if (request.method === 'OPTIONS') {
+            return new Response(null, { status: 204, headers: CORS_HEADERS });
         }
 
-        const formData = await request.formData();
-        const audioFile = formData.get('audio');
-        const language = formData.get('language') || 'en';
+        if (request.method !== 'POST') {
+            return new Response('Method not allowed', { status: 405, headers: CORS_HEADERS });
+        }
 
-        const audioBuffer = await audioFile.arrayBuffer();
+        try {
+            const formData = await request.formData();
+            const audioFile = formData.get('audio');
 
-        const response = await env.AI.run('@cf/openai/whisper-large-v3-turbo', {
-            audio: [...new Uint8Array(audioBuffer)],
-        });
+            if (!audioFile) {
+                return Response.json({ error: 'No audio file provided' }, { status: 400, headers: CORS_HEADERS });
+            }
 
-        return Response.json({ text: response.text });
+            const audioBuffer = await audioFile.arrayBuffer();
+
+            const response = await env.AI.run('@cf/openai/whisper-large-v3-turbo', {
+                audio: [...new Uint8Array(audioBuffer)],
+            });
+
+            return Response.json({ text: response.text }, { headers: CORS_HEADERS });
+        } catch (error) {
+            console.error('Whisper error:', error);
+            return Response.json({ error: 'Transcription failed', detail: error.message }, { status: 500, headers: CORS_HEADERS });
+        }
     }
-};
+};
